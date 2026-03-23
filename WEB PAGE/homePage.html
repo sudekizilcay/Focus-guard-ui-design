@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="homePage.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="page.js"></script>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="homePage.html"><button type="button"class="btn btn-light">Home</button></a>
+        <a href="nedenleri.html"><button type="button"class="btn btn-light">Causes</button></a>
+        <a href="cözümleri.html"><button type="button"class="btn btn-light">Solution</button></a>
+        <a href="survey.html"><button type="button"class="btn btn-light">Survey</button></a>
+    </div>
+
+    <div class="entering">
+        <h1> <b>Hello! Welcome to our web sites. If you are ready, lets begin!</b></h1>
+        <button onclick="kaydir()">Begin</button>
+    </div>
+    
+    <div class="top-section" id="info">
+        <div class="left-panel">
+            <img src="dijital.jpg" alt="Resim 1">
+            <img src="taş.jpg" alt="Resim 2">
+            <img src="adhd.jpg"alt="Resim 3">
+        </div>
+    
+        <div class="right-panel">
+            <h1>Focusing Problems!</h1>
+            <p>
+                Focus problems are defined as difficulties in sustaining mental attention.
+                This occurs when a person cannot fully dedicate themselves to a task or thought.
+                The mind, like a leaf drifting in the wind, constantly shifts to other thoughts and stimuli.
+                This condition reduces productivity in both academic and daily life and has become
+                increasingly common in today's era of digital distraction.
+            </p>
+            <br>
+            <h3>Symptoms of Focus Problems:</h3>
+            <ul>
+                <li>Inability to concentrate on a single task for a long time</li>
+                <li>Frequent wandering of thoughts</li>
+                <li>Losing track while reading or studying</li>
+                <li>Constant desire to take breaks while completing tasks</li>
+                <li>Missing details and forgetfulness</li>
+            </ul>
+            <br>
+            <h3>What Are the Causes?</h3>
+            <ul>
+                <li><b>Technology and Distractions: </b>Constant inerruptions from notifications</li>
+                <li><b>Mental Fatigue and Burnout: </b>Lack of sleep, stress, multitasking overload</li>
+                <li><b>Stress and Anxiety: </b>Mind being preoccupied with the past or future</li>
+                <li><b>Poor Nutrition and Lack of Exercise</b></li>
+                <li><b>Neurodevelopmental Conditions such as Attention Deficit Hyperactivity Disorder (ADHD)</b></li>
+            </ul>
+            <br>
+            <h3>How to Cope:</h3>
+            <ul>
+                <li><b>Digital Detox: </b>Taking breaks from technology during the day</li>
+                <li><b>Pomodoro Technique: </b> 25 minutes of focused work + 5 minutes of rest</li>
+                <li><b>Meditation and Breathing Exercises: </b>Strengthen the ability to stay present</li>
+                <li><b>Adequate Sleep and Healthy Diet: </b>Support brain function</li>
+                <li><b>Daily Planning: </b>Setting clear goals and keeping a to-do list</li>
+            </ul>
+            <br>
+            <h3>Closing Words:</h3>
+            <p>
+                Focus is like an art made with the mind—an inner balance that needs to be practiced a little each day.
+                If you are having trouble focusing, it does not mean you are lazy or incapable;
+                it just means your mind is asking for help. Be gentle with yourself, because protecting your attention
+                in this age is a form of resistance.
+            </p>
+        </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="card1">
+        <div class="resim">
+        <img src="causes.jpg" alt="" style="display: inline-block;" ></div>
+        <div class="isim"><h3>Causes of The Problem</h3><br></div>
+        <p>Focusing problems are often caused by mental fatigue, stress, or distractions, which disrupt the brain's ability
+            to maintain attention. They can also stem from lack of sleep, poor nutrition, or underlying conditions like ADHD
+            or anxiety.
+        </p>
+       <a href="nedenleri.html" class="btn btn-danger">Go!</a>
+    </div>
+    <div class="card2">
+        <div class="resim">
+        <img src="https://images.pexels.com/photos/6589270/pexels-photo-6589270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" style="display: inline-block;"></div>
+        <div class="isim"><h3>Solution of The Problem</h3><br></div>
+        <p>Solutions include creating a distraction-free environment, practicing mindfulness or the Pomodoro technique,
+            and ensuring proper sleep, nutrition, and exercise. Addressing underlying mental health issues can also
+            significantly improve focus.
+        </p>
+        <a href="cözümleri.html" class="btn btn-danger">Go!</a>
+    </div>
+    <div class="card3">
+        <div class="resim">
+        <img src="https://images.pexels.com/photos/7947759/pexels-photo-7947759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"alt=""style="display:inline-block;"></div>
+        <div class="isim"><h3>Survey</h3><br></div>
+        <p>This survey aims to gather insights about individuals' experiences with attention difficulties,
+            including common distractions, daily focus challenges, and possible underlying causes.
+            Your responses will help identify patterns and explore potential solutions.
+        </p>
+        <a href="survey.html"class="btn btn-danger">Go!</a>
+    </div>
+  </div>
+    <script>
+        function kaydir() {
+        document.getElementById("info").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+
+    <button onclick="scrollToTop()" id="toTopBtn" class="btn btn-secondary" title="En üste git"> ↑ </button>
+</body>
+</html>

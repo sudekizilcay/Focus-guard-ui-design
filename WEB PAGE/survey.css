@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin-top: 60px;
+    background-color: seashell;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: seashell;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+    padding: 10px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: seashell;
+    z-index: 1000; /* önemli */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* görsel ayrım için */
+}
+
+.menu a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-right: 15px;
+    text-decoration: none;
+    background-color: seashell;
+}
+#toTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  z-index: 100;
+}
+#mesaj {
+      display: none;
+      background-color: #d4edda;
+      color: #155724;
+      padding: 10px;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      margin-bottom: 15px;
+}
+
+.secenek-kutu {
+    background-color:rgb(224, 187, 174);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 10px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.secenek-kutu:hover {
+    background-color: #f8f9fa;
+}
+
+.secenek-grup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+}
